@@ -1,0 +1,135 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+  z-index: 100;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 732px;
+  height: 100%;
+  max-height: 681px;
+  border-radius: 48px;
+  padding: 42px 144px;
+  background-color: var(--primary-color-dark-blue);
+  background-image: url(../images/modal-background.png);
+  overflow-y: auto;
+
+  &__btn-close {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    background-color: transparent;
+    border: transparent;
+  }
+
+  &__title {
+    color: var(--primary-white);
+    font-family: "Play", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__text {
+    color: var(--primary-white);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    line-height: 1.18;
+  }
+
+  &__text--blue {
+    color: var(--primary-color-blue);
+  }
+
+  &__field {
+    position: relative;
+    margin-bottom: 24px;
+    width: 310px;
+    height: 52px;
+  }
+
+  &__label {
+    position: absolute;
+    color: var(--primary-white);
+    left: 33px;
+    top: 18px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.15;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 18px 33px;
+    background-color: transparent;
+    border-radius: 32px;
+    border: 2px solid var(--secondary-color-light-gray);
+    color: var(--primary-white);
+
+    &::placeholder {
+      color: var(--primary-white);
+    }
+
+    &:hover {
+      background-color: var(--secondary-color-light-gray);
+      color: var(--primary-white);
+      outline: none;
+    }
+  }
+
+  &__btn {
+    padding: 16px 32px;
+    color: var(--primary-white);
+    background-color: var(--primary-color-blue);
+    border: 2px solid var(--primary-color-blue);
+    border-radius: 32px;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0 auto 8px;
+    display: block;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  &__policy {
+    text-align: center;
+    color: var(--secondary-color-light-gray);
+    font-size: 12px;
+    line-height: 1.5;
+    display: block;
+  }
+
+  &__policy-link {
+    display: block;
+    color: var(--secondary-color-light-gray);
+    text-decoration: underline;
+  }
+}

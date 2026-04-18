@@ -1,0 +1,167 @@
+.section-change {
+  &__flex-container {
+    width: 710px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__text--blue {
+    font-weight: 800;
+    color: var(--primary-color-blue);
+    font-size: 32px;
+
+    text-transform: capitalize;
+    @media screen and (min-width: $bp-desktop) {
+      color: var(--primary-color-blue);
+      font-size: 64px;
+      text-transform: capitalize;
+    }
+  }
+  &__accent {
+    position: relative;
+    line-height: 1.16;
+    font-weight: 500;
+    font-size: 32px;
+
+    color: var(--primary-color-dark-blue);
+    @media screen and (min-width: $bp-desktop) {
+      position: relative;
+      line-height: 1.16;
+      font-weight: 800;
+      margin-right: 32px;
+      font-size: 64px;
+      text-transform: capitalize;
+      color: var(--primary-color-dark-blue);
+    }
+  }
+
+  &__hospital {
+    font-size: 18px;
+    line-height: 1.16;
+    margin-bottom: 16px;
+    width: 320px;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      line-height: 1.7;
+      margin-bottom: 40px;
+      width: 709px;
+      font-size: 22px;
+    }
+  }
+
+  &__hospital-second {
+    font-size: 18px;
+    line-height: 1.16;
+    margin-bottom: 16px;
+    width: 320px;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      line-height: 1.7;
+      font-size: 22px;
+      width: 709px;
+    }
+  }
+
+  &__strong {
+    text-transform: capitalize;
+    font-weight: 700;
+
+    @media screen and (min-width: $bp-desktop) {
+      text-transform: capitalize;
+    }
+  }
+
+  &__change-img {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 500px;
+    position: relative;
+  }
+
+  &__svg-icon {
+    position: absolute;
+    top: 380px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    @media screen and (min-width: $bp-desktop) {
+      position: absolute;
+      top: 340px;
+      left: 130px;
+      width: 64px;
+      height: 64px;
+      animation-name: star;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  &__svg-2 {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      top: 270px;
+      right: 0px;
+      animation-name: star;
+      animation-duration: 0.8s;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  &__svg-3 {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: -30px;
+      transform: rotate(-30deg);
+      animation-name: star;
+      animation-duration: 1.2s;
+      animation-iteration-count: infinite;
+      transform: rotate(0.3deg);
+    }
+  }
+  &__after-procedurse {
+    border-radius: 50%;
+    width: 343px;
+    height: 328px;
+  }
+
+  &__container-to-procedurse {
+    align-self: flex-start;
+  }
+
+  &__container-after-procedurse {
+    align-self: flex-end;
+  }
+
+  &__to-procedurse,
+  &__after-procedurse {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      width: 343px;
+      height: 328px;
+      border-radius: 50%;
+    }
+  }
+
+  @keyframes star {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+}
