@@ -39,6 +39,7 @@
     fill: var(--primary-color-dark-blue);
     border: 1px solid var(--primary-color-dark-blue);
     cursor: pointer;
+    flex-shrink: 0;
   }
 }
 

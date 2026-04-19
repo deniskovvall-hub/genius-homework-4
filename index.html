@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
-            <a class="header__logo" href="/"
+            <a class="header__logo" href="./"
               >Beauty <span class="br"> Zone</span></a
             >
             <ul class="header__menu">
@@ -70,11 +74,52 @@
       </div>
     </header>
     <div class="mobile-menu">
-      <button class="menu-btn-close mobile__close" type="button">
-        <svg width="12" height="12">
-          <use href="./images/svg/sprite.svg#icon-modal__close"></use>
-        </svg>
-      </button>
+      <div class="mobile__header">
+        <h2 class="mobile__logo">beauty<br />zone</h2>
+        <button class="menu-btn-close mobile__close" type="button">
+          <svg width="12" height="12">
+            <use href="./images/svg/sprite.svg#icon-modal__close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile__nav">
+        <ul class="mobile__ul">
+          <li>
+            <a class="mobile__link" href="#change-in">Про нас</a>
+          </li>
+          <li>
+            <a class="mobile__link" href="#why-choose-us">Чому ми</a>
+          </li>
+          <li>
+            <a class="mobile__link" href="#our-procedures">Наші процедури</a>
+          </li>
+          <li><a class="mobile__link" href="#contacts">Контакти</a></li>
+        </ul>
+      </nav>
+      <ul class="mobile__ul-svg">
+        <li>
+          <a href="#">
+            <svg class="mobile__svg" width="32" height="32">
+              <use href="./images/svg/sprite.svg#icon-header-telefon"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            ><svg class="mobile__svg" width="32" height="32">
+              <use href="./images/svg/sprite.svg#icon-header-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="mobile__svg" width="32" height="32">
+              <use href="./images/svg/sprite.svg#icon-header-instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
     <main>
       <section class="hero-section">
@@ -202,50 +247,77 @@
               Наші
               <span class="our-procedur__title--blue">процедури</span>
             </h2>
-            <div class="our-procedur__container">
-              <button class="arrow-button" type="button">
+            <div class="our-procedur__slider">
+              <button class="arrow-button prev" type="button">
                 <svg width="16" height="16">
                   <use href="./images/svg/sprite.svg#icon-Arrow-1"></use>
                 </svg>
               </button>
-              <ul class="our-procedur__list">
-                <li>
-                  <article class="our-procedur__card our-procedur__card--cream">
-                    <p class="our-procedur__card-text">
-                      Маски <br />для обличчя
-                    </p>
-                  </article>
-                </li>
-                <li>
-                  <article
-                    class="our-procedur__card our-procedur__card--injection"
-                  >
-                    <p class="our-procedur__card-text">
-                      Ін'єкції <br />для обличчя
-                    </p>
-                  </article>
-                </li>
-                <li>
-                  <article
-                    class="our-procedur__card our-procedur__card--cleaning"
-                  >
-                    <p class="our-procedur__card-text">
-                      Очищення <br />обличчя
-                    </p>
-                  </article>
-                </li>
-              </ul>
-              <button class="arrow-button" type="button">
+              <div class="swiper-container our-procedur__container">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <article
+                      class="our-procedur__card our-procedur__card--cream"
+                    >
+                      <p class="our-procedur__card-text">
+                        Маски <br />для обличчя
+                      </p>
+                    </article>
+                  </li>
+                  <li class="swiper-slide">
+                    <article
+                      class="our-procedur__card our-procedur__card--injection"
+                    >
+                      <p class="our-procedur__card-text">
+                        Ін'єкції <br />для обличчя
+                      </p>
+                    </article>
+                  </li>
+                  <li class="swiper-slide">
+                    <article
+                      class="our-procedur__card our-procedur__card--cleaning"
+                    >
+                      <p class="our-procedur__card-text">
+                        Очищення <br />обличчя
+                      </p>
+                    </article>
+                  </li>
+                  <li class="swiper-slide">
+                    <article
+                      class="our-procedur__card our-procedur__card--cream"
+                    >
+                      <p class="our-procedur__card-text">
+                        Маски <br />для обличчя
+                      </p>
+                    </article>
+                  </li>
+                  <li class="swiper-slide">
+                    <article
+                      class="our-procedur__card our-procedur__card--injection"
+                    >
+                      <p class="our-procedur__card-text">
+                        Ін'єкції <br />для обличчя
+                      </p>
+                    </article>
+                  </li>
+                  <li class="swiper-slide">
+                    <article
+                      class="our-procedur__card our-procedur__card--cleaning"
+                    >
+                      <p class="our-procedur__card-text">
+                        Очищення <br />обличчя
+                      </p>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+              <button class="arrow-button next" type="button">
                 <svg width="16" height="16">
                   <use href="./images/svg/sprite.svg#icon-Arrow-1"></use>
                 </svg>
               </button>
             </div>
-            <div class="our-procedur__dots">
-              <div class="our-procedur__dot our-procedur__dot--active"></div>
-              <div class="our-procedur__dot"></div>
-              <div class="our-procedur__dot"></div>
-            </div>
+            <div class="pagination"></div>
           </div>
         </section>
       </div>
@@ -267,7 +339,7 @@
               <div class="find__container--blue">
                 <h2 class="find__text">
                   Запишіться <span class="find__text--blue">безкоштовно</span>
-                  <p class="br">та отримайте подарунок</p>
+                  <span class="br">та отримайте подарунок</span>
                 </h2>
                 <form name="contact-form" autocomplete="on" novalidate>
                   <div class="find__form">
@@ -324,12 +396,12 @@
         <div class="footer__container">
           <nav class="footer__nav">
             <div class="footer__logo">
-              <a class="footer__logo-link" href="/">
+              <a class="footer__logo-link" href="./">
                 Beauty <span class="br">Zone</span></a
               >
             </div>
             <ul class="footer__menu">
-              <li><a class="footer__link" href="#">Про нас</a></li>
+              <li><a class="footer__link" href="#change-in">Про нас</a></li>
               <li><a class="footer__link" href="#why-choose-us">Чому ми</a></li>
               <li>
                 <a class="footer__link" href="#our-procedures"
@@ -340,62 +412,66 @@
             </ul>
           </nav>
           <address class="footer__address">
-            <ul class="footer__address-list">
-              <li>
-                <a
-                  class="footer__address-link"
-                  href="tel:+380960000007"
-                  target="_blank"
-                  >+ 38 (096) 000 00 07</a
-                >
-              </li>
-              <li>
-                <a
-                  class="footer__address-link"
-                  href="mailto:beautyzone@gmail.com"
-                  target="_blank"
-                  >beautyzone@gmail.com</a
-                >
-              </li>
-              <li>
-                <a
-                  class="footer__address-link"
-                  href="https://maps.app.goo.gl/g3uyzt91Wp6kjAGW8"
-                  target="_blank"
-                  >Україна, м. Київ, <br />
-                  вул. Тараса Шевченка 5</a
-                >
-              </li>
+            <div class="footer__contacts">
+              <ul class="footer__address-list">
+                <li>
+                  <a
+                    class="footer__address-link"
+                    href="tel:+380960000007"
+                    target="_blank"
+                    >+ 38 (096) 000 00 07</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__address-link"
+                    href="mailto:beautyzone@gmail.com"
+                    target="_blank"
+                    >beautyzone@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__address-link"
+                    href="https://maps.app.goo.gl/g3uyzt91Wp6kjAGW8"
+                    target="_blank"
+                    >Україна, м. Київ, <br />
+                    вул. Тараса Шевченка 5</a
+                  >
+                </li>
+              </ul>
               <div class="footer__svg-container">
-                <li>
-                  <a href="#">
-                    <svg class="footer__svg" width="42" height="42">
-                      <use
-                        href="./images/svg/sprite.svg#icon-footer-telefon"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg class="footer__svg" width="42" height="42">
-                      <use
-                        href="./images/svg/sprite.svg#icon-footer-facebook"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><svg class="footer__svg" width="42" height="42">
-                      <use
-                        href="./images/svg/sprite.svg#icon-footer-instagram"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
+                <ul class="footer__svg__ul">
+                  <li>
+                    <a href="#">
+                      <svg class="footer__svg" width="42" height="42">
+                        <use
+                          href="./images/svg/sprite.svg#icon-footer-telefon"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg class="footer__svg" width="42" height="42">
+                        <use
+                          href="./images/svg/sprite.svg#icon-footer-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><svg class="footer__svg" width="42" height="42">
+                        <use
+                          href="./images/svg/sprite.svg#icon-footer-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
-            </ul>
+            </div>
             <div class="footer__policy-container">
               <a class="footer__policy" href="#" target="_blank"
                 >Політика конфіденційності</a
@@ -420,11 +496,11 @@
         </p>
         <form name="contact-form" autocomplete="on">
           <div class="modal__field">
-            <label class="modal__label" for="user-name"></label>
+            <label class="modal__label" for="modal-user-name"></label>
             <input
               class="modal__input"
               type="text"
-              id="user-name"
+              id="modal-user-name"
               name="user-name"
               minlength="2"
               maxlength="10"
@@ -434,11 +510,11 @@
           </div>
 
           <div class="modal__field">
-            <label class="modal__label" for="user-tel"></label>
+            <label class="modal__label" for="modal-user-tel"></label>
             <input
               class="modal__input"
               type="tel"
-              id="user-tel"
+              id="modal-user-tel"
               name="user-tel"
               placeholder="Ваш номер телефону"
               required
@@ -446,11 +522,11 @@
           </div>
 
           <div class="modal__field">
-            <label class="modal__label" for="user-email"></label>
+            <label class="modal__label" for="modal-user-email"></label>
             <input
               class="modal__input"
               type="email"
-              id="user-email"
+              id="modal-user-email"
               name="user-email"
               placeholder="Ваша електронна пошта"
               required
@@ -469,6 +545,8 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/formats-slider.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
