@@ -28,8 +28,11 @@
     }
   }
   &__map {
-    width: 360px;
+    width: 100vw;
+    margin-left: -20px;
+    margin-right: -20px;
     height: 232px;
+    border: 0;
 
     @media screen and (min-width: $bp-desktop) {
       display: block;
@@ -37,6 +40,8 @@
       border-radius: 32px;
       width: 100%;
       max-width: 605px;
+      margin-left: 0;
+      margin-right: 0;
       height: 481px;
     }
   }
@@ -128,6 +133,7 @@
     background-color: transparent;
   }
   &__input {
+    display: block;
     width: 241px;
     margin: 0 auto;
     padding: 16px 24px;

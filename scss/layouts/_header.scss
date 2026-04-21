@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 2;
+  padding: 16px 0;
 
   @media screen and (min-width: $bp-desktop) {
     padding: 32px 0px;
@@ -14,12 +15,13 @@
   &__logo {
     position: relative;
     z-index: 1;
+    display: inline-block;
     color: var(--primary-color-blue);
     font-size: 16px;
     font-family: "Play", sans-serif;
     font-weight: 700;
+    line-height: 1.2;
     text-transform: capitalize;
-    padding-top: 16px;
     @media screen and (min-width: $bp-desktop) {
       color: var(--primary-color-blue);
       font-size: 22px;
@@ -30,8 +32,12 @@
   }
   &__nav {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+
+    @media screen and (min-width: $bp-desktop) {
+      align-items: center;
+    }
   }
 
   &__menu {
