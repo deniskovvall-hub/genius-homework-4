@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
 
     @media screen and (min-width: $bp-desktop) {
       flex-direction: row;
@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
 
     @media screen and (min-width: $bp-desktop) {
       flex-basis: 50%;
@@ -90,8 +90,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
-    font-style: normal;
+    gap: 16px;
 
     @media screen and (min-width: $bp-desktop) {
       align-items: flex-start;
@@ -153,7 +152,6 @@
     width: 32px;
     height: 32px;
     fill: var(--primary-white);
-
     @media screen and (min-width: $bp-desktop) {
       transition-duration: 1s;
       width: 44px;
@@ -169,18 +167,15 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    order: -1;
 
     @media screen and (min-width: $bp-desktop) {
       align-items: flex-start;
-      order: 0;
     }
   }
 
   &__policy {
     font-size: 12px;
     color: var(--primary-white);
-
     @media screen and (min-width: $bp-desktop) {
       font-size: 16px;
 
@@ -193,6 +188,7 @@
   &__policy-text {
     color: #747272;
     font-size: 12px;
+    order: -1;
 
     @media screen and (min-width: $bp-desktop) {
       font-size: 13px;
